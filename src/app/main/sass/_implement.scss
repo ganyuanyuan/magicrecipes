@@ -1,0 +1,54 @@
+$color-white:#fff;
+$color-black:#000;
+
+$color-main:#f9d49c;
+$color-main-dark:#f6c193;
+$color-main-red-light:#e2806a;
+$color-main-red:#db6b5c;
+$color-blue:#588c7e;
+$color-green:#acbc8a;
+$color-green-dark:#85a48c;
+
+
+.btn{
+  border: none;
+  cursor:pointer;
+
+
+  &-adding,
+  &-adding:link,
+  &-adding:visited{
+    font-size: 3rem;
+    color: $color-main-red;
+    background-color: $color-main;
+    height : 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    border: .5rem solid $color-main-dark;
+    box-shadow: none;
+
+    position: relative;
+
+    & p{
+      position: absolute;
+      top: -3.5rem;
+      left: 1.2;
+
+    }
+  }
+
+  &-action,
+  &-action:link,
+  &-action:visited{
+    font-size: 3rem;
+    color: $color-main-red;
+    text-decoration: none;
+    font-family: 'Stylish', sans-serif;
+
+    background-color: transparent;
+    margin: 0 2rem;
+    padding: 0 2rem;
+    border: .4rem solid $color-main-red;
+    border-radius: 2rem;
+  }
+}

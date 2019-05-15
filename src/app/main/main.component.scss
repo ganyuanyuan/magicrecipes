@@ -1,0 +1,89 @@
+@import "sass/implement";
+.main-body{
+
+}
+.header-box{
+  display: flex;
+  justify-content: center;
+}
+.main-header{
+  text-align: center;
+  text-transform: uppercase;
+  color: $color-blue;
+  font-size: 6em;
+
+
+  border: 1rem solid $color-blue;
+  padding: .5rem 4rem;
+  margin:2rem;
+  border-radius: 4rem;
+}
+
+.adding-box{
+  display: flex;
+  justify-content: center;
+}
+
+.box{
+  width: 20rem;
+  height:30rem;
+  margin: 1rem 2rem;
+
+
+  border-radius:  3rem;
+  &-color-1{
+    background-color: $color-main-red-light;
+    border: 1rem solid $color-main-red;
+  }
+  &-color-2{
+    background-color: $color-green;
+    border: 1rem solid $color-green-dark;
+  }
+  &-header{
+    color: rgba($color-black, .5);
+    text-align: center;
+    font-size: 3rem;
+    margin: 3rem 3rem;
+
+  }
+  &-line{
+    text-align: center;
+    margin: 1.7rem auto;
+
+    & .btn{
+      float: right;
+      margin-right:2rem;
+    }
+
+  }
+  &-text{
+    font-size: 2.5rem;
+    color: rgba($color-black, .5);
+    margin-right:3rem;
+
+  }
+}
+
+
+.choose{
+  text-align: center;
+
+  &-place{
+    font-size: 4rem;
+    color: $color-main-red;
+    margin: 3rem;
+  }
+}
+
+.action{
+  display: flex;
+  justify-content: center;
+}
+
+.result{
+  text-align: center;
+  font-size: 5rem;
+  color: $color-main-red;
+
+
+}

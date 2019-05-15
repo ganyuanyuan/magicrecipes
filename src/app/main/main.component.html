@@ -1,0 +1,62 @@
+<div class="main-body">
+  <div class="header-box">
+      <h2 class="main-header">Magic recipes</h2>
+  </div>
+
+  <div class="adding-box">
+    <div class="box box-color-1">
+      <h4 class="box-header">add <br/> meat</h4>
+      <div class="box-line">
+        <span class="box-text">beef</span>
+        <button type="button" class="btn btn-adding " (click)="addBeef()"><p>+</p></button>
+      </div>
+      <div class="box-line">
+        <span class="box-text">pork</span>
+        <button type="button" class="btn btn-adding" (click)="addPork()"><p>+</p></button>
+      </div>
+      <div class="box-line">
+        <span class="box-text">chicken</span>
+        <button type="button" class="btn btn-adding" (click)="addChicken()"><p>+</p></button>
+      </div>
+    </div>
+
+
+
+    <div class="box box-color-2">
+      <h4 class="box-header">add vegetable</h4>
+      <div class="box-line">
+        <span class="box-text">potato</span>
+        <button type="button" class="btn btn-adding" (click)="addPotato()"><p>+</p></button>
+      </div>
+      <div class="box-line">
+        <span class="box-text">eggplant</span>
+        <button type="button" class="btn btn-adding" (click)="addEggplant()"><p>+</p></button>
+      </div>
+      <div class="box-line">
+        <span class="box-text">peper</span>
+        <button type="button" class="btn btn-adding" (click)="addPeper()"><p>+</p></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="choose">
+    <div class="choose-place">
+      <div class="choose-item">
+        My {{count}} choice : {{ choice }}
+      </div>
+    </div>
+  </div>
+
+  <div class="action">
+    <button type="button" class="btn btn-action" (click)="start()">start</button>
+    <button type="button" class="btn btn-action" (click)="reset()">reset</button>
+  </div>
+
+  <div class="result">
+    <h4 *ngIf="isGood" class="result-good">
+      Delicious! Your recipe is {{meat[0]}} stew {{vege[0]}}
+
+    </h4>
+    <h4 *ngIf="isBad" class="result-bad">Sorry, no available recipe.</h4>
+  </div>
+</div>
