@@ -34,56 +34,18 @@ export class MainComponent  {
     this.isBad = false;
   }
 
-
-  addBeef() {
-    if (this.choice.indexOf('beef') === -1){
-      this.choice.push('beef');
+  addItem(item,type){
+    if (this.choice.indexOf(item) === -1){
+      this.choice.push(item);
       this.count ++;
-      this.isMeat = true;
-      this.meat.push('beef');
+      if (type==='meat') {
+        this.isMeat = true;
+        this.meat.push(item);
+      } else {
+        this.isVegetable = true;
+        this.vege.push(item);
+      }
     }
   }
 
-  addPork(){
-    if (this.choice.indexOf('pork') === -1){
-      this.choice.push('pork');
-      this.count ++;
-      this.isMeat = true;
-      this.meat.push('pork');
-    }
-  }
-
-  addChicken(){
-    if (this.choice.indexOf('chicken') === -1){
-      this.choice.push('chicken');
-      this.count ++;
-      this.isMeat = true;
-      this.meat.push('chicken');
-    }
-  }
-
-  addPotato(){
-    if (this.choice.indexOf('potato') === -1){
-      this.choice.push('potato');
-      this.count ++;
-      this.isVegetable = true;
-      this.vege.push('potato');
-    }
-  }
-  addEggplant(){
-    if (this.choice.indexOf('eggplant') === -1){
-      this.choice.push('eggplant');
-      this.count ++;
-      this.isVegetable = true;
-      this.vege.push('eggplant');
-    }
-  }
-  addPeper(){
-    if (this.choice.indexOf('peper') === -1){
-      this.choice.push('peper');
-      this.count ++;
-      this.isVegetable = true;
-      this.vege.push('peper');
-    }
-  }
 }
